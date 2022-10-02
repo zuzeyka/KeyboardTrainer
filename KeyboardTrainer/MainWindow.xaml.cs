@@ -18,9 +18,6 @@ using System.Windows.Threading;
 
 namespace KeyboardTrainer
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private string charsCaseSensetive = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
@@ -44,9 +41,6 @@ namespace KeyboardTrainer
             keyCharDict = new Dictionary<Key, char>();
             for (int i = 44; i <= 69; i++)
                 keyCharDict.Add((Key)i, (char)(i + 21));
-            keyCharDict.Add(Key.Space, ' ');
-            keyCharDict.Add(Key.OemPeriod, '.');
-            keyCharDict.Add(Key.OemComma, ',');
 
             // init dict chars-rects
             charRect = new Dictionary<char, Rectangle>();
