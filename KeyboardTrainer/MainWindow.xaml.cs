@@ -23,8 +23,8 @@ namespace KeyboardTrainer
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string charsCaseSensetive = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm,.";
-        private string charsCaseUnsensitive = "qwertyuiopasdfghjklzxcvbnm,.";
+        private string charsCaseSensetive = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
+        private string charsCaseUnsensitive = "qwertyuiopasdfghjklzxcvbnm";
         private bool isShiftPressed = false;
         private string inputText = "";
         private string enteredText = "";
@@ -77,8 +77,6 @@ namespace KeyboardTrainer
             charRect.Add('b', bR);
             charRect.Add('n', nR);
             charRect.Add('m', mR);
-            charRect.Add(',', commaR);
-            charRect.Add('.', dotR);
 
             // init timer
             timer = new DispatcherTimer();
